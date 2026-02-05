@@ -1,0 +1,135 @@
+.role-selector {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.role-option {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    cursor: pointer;
+    transition: all var(--transition-base);
+    text-align: left;
+    font-family: var(--font-family);
+}
+
+.role-option:hover {
+    border-color: var(--primary-400);
+    background: var(--surface-hover);
+}
+
+.role-option.active {
+    border-color: var(--primary-500);
+    background: linear-gradient(135deg,
+            hsla(var(--primary-hue), 75%, 55%, 0.1),
+            hsla(var(--primary-hue), 75%, 55%, 0.05));
+    box-shadow: 0 0 0 4px hsla(var(--primary-hue), 75%, 55%, 0.1);
+}
+
+.role-icon {
+    font-size: 2rem;
+}
+
+.role-name {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.role-description {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.data-stats {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-md);
+}
+
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--text-secondary);
+}
+
+.stat-value {
+    font-size: var(--font-size-base);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Badge styles for tables */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    border-radius: var(--radius-full);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-admin {
+    background: hsla(var(--primary-hue), 75%, 55%, 0.15);
+    color: var(--primary-600);
+}
+
+.badge-editor {
+    background: hsla(199, 89%, 48%, 0.15);
+    color: var(--info-500);
+}
+
+.badge-manager {
+    background: hsla(var(--accent-hue), 85%, 60%, 0.15);
+    color: var(--accent-600);
+}
+
+.badge-viewer {
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+.badge-active {
+    background: hsla(142, 76%, 45%, 0.15);
+    color: var(--success-500);
+}
+
+.badge-inactive {
+    background: var(--bg-tertiary);
+    color: var(--text-tertiary);
+}
+
+.badge-pending {
+    background: hsla(45, 93%, 55%, 0.15);
+    color: var(--warning-500);
+}
+
+.badge-success {
+    background: hsla(142, 76%, 45%, 0.15);
+    color: var(--success-500);
+}
+
+.badge-warning {
+    background: hsla(45, 93%, 55%, 0.15);
+    color: var(--warning-500);
+}
+
+.badge-danger {
+    background: hsla(0, 84%, 60%, 0.15);
+    color: var(--danger-500);
+}
